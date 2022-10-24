@@ -9,11 +9,25 @@
 </head>
 <body>
     
-    <button id="btn">Start the quiz</button>
+
+    <div class="info-box" id="info">
+        <div class ="info-title">
+            <span>Codind Quiz Challenge</span>
+        </div>
+           
+     <button id="btn">Start the quiz</button>
+         <div class="info">You will have 75 seconds for all questions. Once you select your answer, you can not reselect. If you answer a question incorrectly then time is subtracted from the clock. When all questions are answered or the timer reaches 0 then game is over and you can save your initials.  </div>
+    </div>
+
     <div id="time"></div>
     <div id="questionDisplay">
-        
     </div>
+
+    <form id="initials">
+        <input placeholder="Initials" id="name" />
+        <button id="submit">Submit</button>
+    </form>
+
       <script src="Assets/script.js"></script>
 </body>
 </html>
