@@ -1,6 +1,5 @@
 var timeLeft=75;
-var submitButton=document.getElementById("submit");
-var formElement=document.getElementById("name");
+var nameInput=document.getElementById("name");
 var form=document.getElementById("initials");
 var infoElement=document.getElementsByClassName("info-box");
 var buttonElement=document.getElementById("btn");
@@ -30,7 +29,6 @@ function timeDown(){
 }
 
 function startTimer(){
-//forEach//
     infoBox.remove(), 
     clockMedia=setInterval(timeDown, 1000)
     makeQuestion();
@@ -73,20 +71,28 @@ function makeQuestion(){
     
 }
 
-// function submitEl(){
-//     document.getElementById("name").submit();
-//     console.log("name");
 
-// }
 
 function endGame(){
     clearInterval(clockMedia);
-    questionElement.innerHTML = "End Game"
-   form.style.display="block"; 
+    questionElement.innerHTML = "End of the game, write your Initials, your score istimeLeft"
+    form.style.display="block"; 
+    
 }
 
 
-// submitButton.addEventListener("click",submitEl);
+
+
+
+// document.getElementById('form.initials').addEventListener('submit', function (event) {
+
+//     //prevent the normal submission of the form
+//     e.preventDefault();
+
+//     console.log(nameInput.value);    
+// });
+
+
 
 buttonElement.addEventListener("click", startTimer);
 

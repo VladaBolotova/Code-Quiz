@@ -31,7 +31,9 @@ body{
 }
 
 h3{
-    color:brown
+    color:brown;
+    margin-left: 43%;
+    margin-top: 10%;
    
 
 }
@@ -44,6 +46,8 @@ li{
     color: black ;
     outline: none;
     margin: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 li :hover{
@@ -71,4 +75,18 @@ li :hover{
 
 form{
   display: none;
+
+
+}
+
+#submit{
+  background-color: antiquewhite;
+  color: black;
+  box-sizing: border-box;
+  margin: 1%;
+  font-size: 40px;
+}
+
+#name{
+  font-size: 40px;
 }
